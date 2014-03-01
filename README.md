@@ -5,6 +5,7 @@ Take the role of a lowly beggar, Icarus, as he finds himself put in a position o
 Icarus is a 2D ambient platformer game for Windows featuring unique game mechanics, engaging atmosphere, and a living world. Each playthrough takes about half an hour and will get you one of several endings.
 
 [trailer](http://www.youtube.com/watch?v=rYUrjb-M_uk)
+
 [download](http://www.mediafire.com/download.php?f5pgg19f8wfqcc6)
 
 # Places of interest
