@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ThirdPersonController.js">
+    <Files>
+      <File FileName="Assets\Scripts\ThirdPersonController.js" Line="408" Column="17" />
+      <File FileName="Assets\Scripts\ThirdPersonCamera.js" Line="98" Column="2" />
+      <File FileName="Assets\Scripts\PushSphere.js" Line="17" Column="2" />
+      <File FileName="Assets\Scripts\AudioController.js" Line="28" Column="78" />
+      <File FileName="Assets\Scripts\Interactive.js" Line="57" Column="9" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

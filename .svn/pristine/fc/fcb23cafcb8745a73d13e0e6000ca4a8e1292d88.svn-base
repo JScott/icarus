@@ -1,0 +1,40 @@
+#pragma strict
+
+var text:String = "I AM ERROR";
+var type:InteractType;
+var interactDistance:float = 7.0;
+private var highlightObj:GameObject;
+var highlightObjectHeight = 2.0;
+
+enum InteractType {
+	Talk = 0,
+	Pickup = 1,
+}
+
+function Start () {
+	highlightObj = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+	highlightObj.transform.position = transform.position;
+	highlightObj.transform.position.y += highlightObjectHeight;
+	highlightObj.renderer.material.color = Color.yellow;
+}
+
+function Update () {
+	highlightObj.renderer.enabled = false;
+}
+
+function Highlight() {
+	highlightObj.renderer.enabled = true;
+}
+
+function Interact() {
+	switch(type) {
+		case 0:
+			Debug.Log(text);
+			break;
+		case 1:
+			Debug.Log("pick up");
+			break;
+		default:
+			break;
+	}
+}

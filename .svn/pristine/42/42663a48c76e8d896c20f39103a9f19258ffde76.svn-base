@@ -1,0 +1,21 @@
+#pragma strict
+var player : ThirdPersonController;
+
+function Start () {
+	renderer.enabled = false;
+}
+
+function Update () {
+
+}
+
+function OnTriggerEnter(other:Collider)
+{
+	Debug.Log("killed");
+	var AI : SilverfinAI = other.gameObject.GetComponent(SilverfinAI);
+	if (AI)
+	{
+		AI.Die();
+		player.StartBouncing();
+	}
+}
