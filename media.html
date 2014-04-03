@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Icarus by Justin Scott</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+
+    <!-- include jQuery library --> 
+    <script type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script> 
+     <!-- include extra javascript -->
+     <script type="text/javascript" src="menubar.js"></script> 
+
+     <!-- fancybox for the gallery -->
+     <script type="text/javascript" src="./fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="./fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="./fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
+     <!-- audio player libraries -->
+     <script type="text/javascript" src="audio/audio-player.js"></script>  
+     <script type="text/javascript">  
+         AudioPlayer.setup("http://icarus.jvscott.net/audio/player.swf", {  
+             width: 560,
+             transparentpagebg: "yes"
+         });  
+     </script>  
+
+
+<script type="text/javascript">
+$(function() {
+	$("#gallery a").fancybox({
+		'transitionIn'	: 'none',
+		'transitionOut'	: 'none',
+		'overlayColor'	: '#000',
+		'overlayOpacity': 0.9,
+		'titlePosition'	: 'inside',
+		'hideOnContentClick': true
+	});
+
+  	$("#img1").mouseover(function ()
+	{
+		$("img#large").attr({src:'screenshots/City Limits.png'});
+		$("a#large").attr({href:'screenshots/City Limits.png'});
+	});
+	$("#img2").mouseover(function ()
+	{
+		$("img#large").attr({src:'screenshots/Forest.png'});
+		$("a#large").attr({href:'screenshots/Forest.png'});
+	});
+	$("#img3").mouseover(function ()
+	{
+		$("img#large").attr({src:'screenshots/Interlude.png'});
+		$("a#large").attr({href:'screenshots/Interlude.png'});
+	});
+	$("#img4").mouseover(function ()
+	{
+		$("img#large").attr({src:'screenshots/One For Me.png'});
+		$("a#large").attr({href:'screenshots/One For Me.png'});
+	});
+	$("#img5").mouseover(function ()
+	{
+		$("img#large").attr({src:'screenshots/To Battle.png'});
+		$("a#large").attr({href:'screenshots/To Battle.png'});
+	});
+});
+
+
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18680697-3']);
+  _gaq.push(['_setDomainName', '.jvscott.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+  </head>
+  <body>
+  <div id="bg">
+  <div id="padding">
+    <a href="http://icarus.jvscott.net"><img alt="Icarus" src="header.png"/></a>
+    <img alt="header" src="background/borderTop.png" style="width: 768px;"/>
+    <table id="container">
+      <tr id="body">
+        <td id="left">
+	
+			<div class="mediakit"><a href="http://www.mediafire.com/download.php?q56ah5k49o637km">Click here to download the Media Kit</a></div>
+            <div class="no_gold" id="gallery">
+<a href="screenshots/City Limits.png" id="large"><img alt="City Limits" src="screenshots/City Limits.png" id="large"/></a>
+
+<a href="screenshots/City Limits.png"><img alt="City Limits" src="screenshots/City Limits.png" class="preview" id="img1"/></a>
+<a href="screenshots/Forest.png"><img alt="Forest" src="screenshots/Forest.png" class="preview" id="img2"/></a>
+<a href="screenshots/Interlude.png"><img alt="Interlude" src="screenshots/Interlude.png" class="preview" id="img3"/></a>
+<a href="screenshots/One For Me.png"><img alt="One For Me" src="screenshots/One For Me.png" class="preview" id="img4"/></a>
+<a href="screenshots/To Battle.png"><img alt="To Battle" src="screenshots/To Battle.png" class="preview" id="img5"/></a>
+
+<img alt="To Battle" src="screenshots/City Limits.png" class="preload"/>
+<img alt="To Battle" src="screenshots/Forest.png" class="preload"/>
+<img alt="To Battle" src="screenshots/Interlude.png" class="preload"/>
+<img alt="To Battle" src="screenshots/One For Me.png" class="preload"/>
+<img alt="To Battle" src="screenshots/To Battle.png" class="preload"/>
+            </div>
+
+
+        <p id="audioplayer_1"><br/></p>  
+        <script type="text/javascript">  
+        AudioPlayer.embed("audioplayer_1", {
+          soundFile: "http://icarus.jvscott.net/audio/theme.mp3",
+          titles: "Icarus Theme",
+          artists: "br1ght pr1mate"
+        });  
+        </script>  
+        <br />
+        <p id="audioplayer_2">Flash audio player was unable to load.</p>  
+        <script type="text/javascript">  
+        AudioPlayer.embed("audioplayer_2", {
+          soundFile: "http://icarus.jvscott.net/audio/olympus.mp3",
+          titles: "Guitar Solo on Mons Olympus",
+          artists: "br1ght pr1mate"
+        });  
+        </script>
+
+
+            <p>
+              <iframe width="560" height="349" src="http://www.youtube.com/embed/rYUrjb-M_uk?wmode=transparent" frameborder="0" allowfullscreen></iframe>
+            </p>
+
+
+          </td>
+        <td id="right">
+          <!-- added in via JS to avoid redundancy -->
+        </td>
+      </tr>
+    </table>
+    <img alt="footer" src="background/borderBottom.png" style="width: 768px; padding-bottom: 90px"/>
+  </div>
+  </div>
+  </body>
+</html>
